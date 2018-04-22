@@ -79,12 +79,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoFactory.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MongoFactory.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -133,6 +137,9 @@
       <find>VendorIdDealsRequest</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -167,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Search.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/SearchActor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -409,7 +417,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="13" y="33" width="1407" height="850" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
@@ -421,15 +428,15 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32934928" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.20794702" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32934928" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20717132" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.39009902" visible="true" weight="0.17069598" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.39028475" visible="true" weight="0.17069598" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="12" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32980132" />
-      <window_info id="Structure" order="7" sideWeight="0.609901" side_tool="true" visible="true" weight="0.17069598" />
+      <window_info id="Structure" order="7" sideWeight="0.6097152" side_tool="true" visible="true" weight="0.17069598" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -802,13 +809,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
