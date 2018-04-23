@@ -10,9 +10,9 @@ object MongoFactory {
   private val PORT = 27017
   private val DATABASE = "motintin"
   val uri = MongoClientURI("mongodb://heroku_4bs5p4nk:8n4dv3mbe0a5tdtu1gmhhcf06u@ds255889.mlab.com:55889/heroku_4bs5p4nk")
-  //  val c = MongoClient(uri)
+  val mongoClient = MongoClient(uri)
 
-  val mongoClient = MongoClient(SERVER, PORT)
+  //val mongoClient = MongoClient(SERVER, PORT)
   val db = mongoClient(DATABASE)
 
   def getCollection(collection: String) = db(collection)

@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/motintin_items
+web: target/universal/stage/bin/motintin_items -Dhttp.port=${PORT}
