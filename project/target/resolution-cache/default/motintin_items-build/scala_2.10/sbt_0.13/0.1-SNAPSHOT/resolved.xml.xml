@@ -4,7 +4,7 @@
 		module="motintin_items-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20180421202432"
+		publication="20180423212511"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

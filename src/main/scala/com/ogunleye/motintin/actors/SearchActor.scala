@@ -1,12 +1,11 @@
 package com.ogunleye.motintin.actors
 
-import akka.actor.{Actor, ActorRef, Props}
+import akka.actor.{ Actor, ActorRef, Props }
 import com.ogunleye.motintin.models._
 import com.typesafe.scalalogging.LazyLogging
 
 import scala.collection.mutable
-import scala.collection.mutable.{Map => MyMap}
-
+import scala.collection.mutable.{ Map => MyMap }
 
 class SearchActor extends Actor with LazyLogging {
 
@@ -21,20 +20,22 @@ class SearchActor extends Actor with LazyLogging {
   private val dealVendorMap = MyMap[ActorRef, MyMap[String, List[Deal]]]()
 
   override def receive: Receive = {
-    case name: String => logger.info(s"Looking for item by name: $name")
+    case name: String =>
+      logger.info(s"Looking for item by name: $name")
       itemActor ! SearchByItemNameRequest(name, sender())
     case response: SearchByItemNameResponse => response.item match {
-      case None => logger.error(s"No Item found for name")
+      case None =>
+        logger.error(s"No Item found for name")
         response.ref ! NotFoundException(s"No item found")
-      case Some(item) => listingActor ! ListingsByItemIdRequest(item._id.get, response.ref)
+      case Some(item) =>
+        listingActor ! ListingsByItemIdRequest(item._id.get, response.ref)
         itemMap(response.ref) = item
     }
     case response: ListingsByItemIdResponse =>
-      if(response.listings.isEmpty) {
+      if (response.listings.isEmpty) {
         response.ref ! NoListingsSearchException(s"No listings for search")
         itemMap -= response.ref
-      }
-      else {
+      } else {
         response.listings.foreach(listing => vendorActor ! VendorListingSearchRequest(listing.vendorId, response.ref))
         listingsMap(response.ref) = response.listings
         vendorCountMap(response.ref) = 0
@@ -51,7 +52,7 @@ class SearchActor extends Actor with LazyLogging {
       val map = dealVendorMap(response.actorRef)
       map(response.id) = response.deals
       dealVendorMap(response.actorRef) = map
-      if(map.size == vendorMap(response.actorRef).size) {
+      if (map.size == vendorMap(response.actorRef).size) {
         val results = new mutable.ListBuffer[SearchListing]
         val ref = response.actorRef
         vendorCountMap -= ref
@@ -63,12 +64,12 @@ class SearchActor extends Actor with LazyLogging {
         itemMap -= ref
         val deals = dealVendorMap(ref)
         dealVendorMap -= ref
-        lm.foreach(li => results += buildSearchListingWithCheapestPriceForVendor(li, deals(li.vendorId), vendors.map(v=> (v._id.get, v)).toMap))
+        lm.foreach(li => results += buildSearchListingWithCheapestPriceForVendor(li, deals(li.vendorId), vendors.map(v => (v._id.get, v)).toMap))
         ref ! SearchResult(item.name, results.toList)
       }
   }
 
-  def buildSearchListingWithCheapestPriceForVendor(li: Listing, deals: List[Deal], vendors: Map[String, Vendor]) : SearchListing = {
+  def buildSearchListingWithCheapestPriceForVendor(li: Listing, deals: List[Deal], vendors: Map[String, Vendor]): SearchListing = {
 
     def calculateCheapest(dealList: List[Deal]) = {
       BigDecimal(li.price).*(dealList.map(_.asInstanceOf[PercentageOff]).filter(_.vendorId.equalsIgnoreCase(li.vendorId)).map(po => BigDecimal(100 - po.amount)./(100)).min).setScale(2)
@@ -76,15 +77,14 @@ class SearchActor extends Actor with LazyLogging {
     SearchListing(vendors(li.vendorId).name, li.productCode, li.webAddress, calculateCheapest(deals).doubleValue())
   }
 
-  def checkAndRequest(ref: ActorRef) : Unit = {
+  def checkAndRequest(ref: ActorRef): Unit = {
     val count = vendorCountMap(ref)
-    if(listingsMap(ref).lengthCompare(count) == 0) {
+    if (listingsMap(ref).lengthCompare(count) == 0) {
       val vendors = vendorMap(ref)
-      if(vendors.nonEmpty) {
+      if (vendors.nonEmpty) {
         vendors.foreach(vendor => dealActor ! VendorIdDealsRequest(vendor._id.get, ref))
         dealVendorMap(ref) = MyMap[String, List[Deal]]()
-      }
-      else {
+      } else {
         ref ! NotFoundException("No vendors found")
         vendorCountMap -= ref
         vendorMap -= ref

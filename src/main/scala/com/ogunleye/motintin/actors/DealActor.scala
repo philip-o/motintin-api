@@ -1,6 +1,6 @@
 package com.ogunleye.motintin.actors
 
-import akka.actor.{Actor, ActorRef, Props}
+import akka.actor.{ Actor, ActorRef, Props }
 import com.ogunleye.motintin.db.DealConnection
 import com.ogunleye.motintin.models._
 import com.typesafe.scalalogging.LazyLogging
@@ -8,7 +8,7 @@ import com.typesafe.scalalogging.LazyLogging
 import scala.collection.mutable
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-import scala.util.{Failure, Success}
+import scala.util.{ Failure, Success }
 
 class DealActor extends Actor with LazyLogging {
 
@@ -17,7 +17,8 @@ class DealActor extends Actor with LazyLogging {
   private val requestMap = mutable.Map[DealRequest, ActorRef]()
 
   override def receive: Receive = {
-    case request: DealRequest => vendorActor ! DealVendorRequest(request.asInstanceOf[PercentageOffRequest].vendor, request)
+    case request: DealRequest =>
+      vendorActor ! DealVendorRequest(request.asInstanceOf[PercentageOffRequest].vendor, request)
       requestMap(request) = sender()
     case response: DealVendorResponse =>
       val ref = requestMap(response.request)
@@ -29,13 +30,15 @@ class DealActor extends Actor with LazyLogging {
               Future {
                 dealConnection.save(PercentageOff(amount = request.amount, expiry = request.expiry, vendorId = vendor._id.get))
               } onComplete {
-                case Success(result) => result.getN
-                  ref ! PercentageOffResponse(_id  = None, request.amount, expiry = request.expiry, vendorId = vendor._id.get)
+                case Success(result) =>
+                  result.getN
+                  ref ! PercentageOffResponse(_id = None, request.amount, expiry = request.expiry, vendorId = vendor._id.get)
                 case Failure(t) => ref ! t
               }
           }
       }
-    case ("id", id: String) => val ref = sender()
+    case ("id", id: String) =>
+      val ref = sender()
       Future {
         dealConnection.findById(id)
       } onComplete {
@@ -45,7 +48,8 @@ class DealActor extends Actor with LazyLogging {
         }
         case Failure(t) => ref ! t
       }
-    case ("vendor", name: String) => val ref = sender()
+    case ("vendor", name: String) =>
+      val ref = sender()
       logger.info(s"Looking for vendor: $name")
       vendorActor ! VendorDealsRequest(name, ref)
 
@@ -58,13 +62,14 @@ class DealActor extends Actor with LazyLogging {
       }
       case None => logger.error("Vendor does not exist")
     }
-    case request: VendorIdDealsRequest => val ref = sender()
+    case request: VendorIdDealsRequest =>
+      val ref = sender()
       Future {
-      dealConnection.findByVendorId(request.id)
-    } onComplete {
-      case Failure(t) => ref ! VendorIdDealsResponse(request.id, Nil, request.actorRef)
-      case Success(list) => ref ! VendorIdDealsResponse(request.id, list, request.actorRef)
-    }
+        dealConnection.findByVendorId(request.id)
+      } onComplete {
+        case Failure(t) => ref ! VendorIdDealsResponse(request.id, Nil, request.actorRef)
+        case Success(list) => ref ! VendorIdDealsResponse(request.id, list, request.actorRef)
+      }
     case other => logger.error(s"Unknown message received: $other")
   }
 
@@ -75,10 +80,10 @@ class DealActor extends Actor with LazyLogging {
     }
   }
 
-  def convertToResponse(deal: Deal) : DealResponse = {
+  def convertToResponse(deal: Deal): DealResponse = {
     //if(deal.isInstanceOf[PercentageOff]) {
     val p = deal.asInstanceOf[PercentageOff]
-      PercentageOffResponse(p._id, p.amount, expiry = p.expiry, vendorId = p.vendorId)
+    PercentageOffResponse(p._id, p.amount, expiry = p.expiry, vendorId = p.vendorId)
     //}
   }
 }

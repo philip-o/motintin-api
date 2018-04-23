@@ -1,6 +1,6 @@
 package com.ogunleye.motintin.routes
 
-import akka.http.scaladsl.server.{Directive1, Directives}
+import akka.http.scaladsl.server.{ Directive1, Directives }
 
 trait SearchDirectives extends Directives {
 

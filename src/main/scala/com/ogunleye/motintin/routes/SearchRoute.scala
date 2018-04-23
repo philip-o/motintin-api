@@ -2,8 +2,8 @@ package com.ogunleye.motintin.routes
 
 import javax.ws.rs.Path
 
-import akka.actor.{ActorRef, ActorSystem, Props}
-import akka.pattern.{CircuitBreaker, ask}
+import akka.actor.{ ActorRef, ActorSystem, Props }
+import akka.pattern.{ CircuitBreaker, ask }
 import akka.util.Timeout
 import com.ogunleye.motintin.actors.SearchActor
 import com.ogunleye.motintin.models.SearchResult
@@ -13,17 +13,17 @@ import io.circe.generic.auto._
 
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration._
-import scala.util.{Failure, Success}
+import scala.util.{ Failure, Success }
 
 @Path("/search")
-class SearchRoute (implicit system: ActorSystem, breaker: CircuitBreaker) extends SearchDirectives with LazyLogging {
+class SearchRoute(implicit system: ActorSystem, breaker: CircuitBreaker) extends SearchDirectives with LazyLogging {
 
   implicit val executor: ExecutionContext = system.dispatcher
   implicit val timeout = Timeout(20 seconds)
-  protected val searchActor : ActorRef = system.actorOf(Props(classOf[SearchActor]))
+  protected val searchActor: ActorRef = system.actorOf(Props(classOf[SearchActor]))
 
   def route = pathPrefix("search") {
-    byName// ~ findById ~ findByVendorName
+    byName // ~ findById ~ findByVendorName
   }
 
   def byName =

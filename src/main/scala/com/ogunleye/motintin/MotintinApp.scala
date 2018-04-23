@@ -29,9 +29,9 @@ object MotintinApp extends App with LazyLogging with RouteConcatenation {
   val dealRoute = new DealRoute().route
   val searchRoute = new SearchRoute().route
 
-  val routes = vendorRoute ~ itemRoute ~ listingRoute ~ dealRoute ~ searchRoute//buildInfoRoute.route ~ healthRoute ~ swaggerDocRoute ~ swaggerSiteRoute ~ prebookingRoute ~ vendorRoute
+  val routes = vendorRoute ~ itemRoute ~ listingRoute ~ dealRoute ~ searchRoute //buildInfoRoute.route ~ healthRoute ~ swaggerDocRoute ~ swaggerSiteRoute ~ prebookingRoute ~ vendorRoute
 
-  Http().bindAndHandle(routes, "localhost",8080)//Settings.httpHost, Settings.httpPort)
+  Http().bindAndHandle(routes, "localhost", 8080) //Settings.httpHost, Settings.httpPort)
   logger.info(s"$applicationName application started")
 
 }

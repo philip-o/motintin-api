@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="610a23db-e089-4100-9df0-baeda8c0590b" name="Default" comment="" />
+    <list default="true" id="610a23db-e089-4100-9df0-baeda8c0590b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1c69095d9896b1f130e$$anonfun$$sbtdef$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1c69095d9896b1f130e$$anonfun$$sbtdef$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1c69095d9896b1f130e$$anonfun$$sbtdef$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1c69095d9896b1f130e$$anonfun$$sbtdef$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1c69095d9896b1f130e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1c69095d9896b1f130e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1c69095d9896b1f130e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/motintin_items-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/motintin_items-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/motintin_items-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/motintin_items-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-motintin_items-build-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/MotintinApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/MotintinApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/DealActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/DealActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/ItemActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/ItemActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/ListingActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/ListingActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/SearchActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/SearchActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/VendorActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/VendorActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/DealConnection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/DealConnection.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/ItemConnection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/ItemConnection.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/ListingConnection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/ListingConnection.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/VendorConnection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/VendorConnection.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Listing.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Listing.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Search.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Search.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/api.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/api.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/DealRoute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/DealRoute.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/ItemRoute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/ItemRoute.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/ListingRoute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/ListingRoute.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/SearchDirectives.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/SearchDirectives.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/SearchRoute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/SearchRoute.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/VendorRoute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/VendorRoute.scala" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -40,11 +93,20 @@
       <file leaf-file-name="SearchRoute.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/SearchRoute.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="367">
               <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="e#38#61#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="46" selection-start-column="46" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -61,8 +123,8 @@
       <file leaf-file-name="SearchActor.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/SearchActor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="75" column="86" selection-start-line="75" selection-start-column="86" selection-end-line="75" selection-end-column="86" />
+            <state relative-caret-position="1140">
+              <caret line="76" column="86" selection-start-line="76" selection-start-column="86" selection-end-line="76" selection-end-column="86" />
               <folding>
                 <element signature="e#38#80#0" expanded="true" />
               </folding>
@@ -73,17 +135,20 @@
       <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="457">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -91,35 +156,8 @@
       <file leaf-file-name="MongoFactory.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DealActor.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/DealActor.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="60" column="38" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemActor.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/ItemActor.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VendorActor.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/VendorActor.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="72" column="109" selection-start-line="72" selection-start-column="109" selection-end-line="72" selection-end-column="109" />
+            <state relative-caret-position="165">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -149,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/db/MongoFactory.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Vendors.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Items.scala" />
-        <option value="$PROJECT_DIR$/project/plugins.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Vendor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/VendorConnection.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Item.scala" />
@@ -167,14 +204,17 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Deal.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/DealActor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/VendorRoute.scala" />
-        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/SearchRoute.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/MotintinApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/VendorActor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/Search.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/SearchActor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/project/plugins.sbt" />
+        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/target/universal/stage/bin/Procfile" />
       </list>
     </option>
   </component>
@@ -202,37 +242,28 @@
             <path>
               <item name="motintin_items" type="b2602c69:ProjectViewProjectNode" />
               <item name="motintin_items" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="motintin_items" type="b2602c69:ProjectViewProjectNode" />
               <item name="motintin_items" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="universal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="motintin_items" type="b2602c69:ProjectViewProjectNode" />
               <item name="motintin_items" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="universal" type="462c0819:PsiDirectoryNode" />
+              <item name="stage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="motintin_items" type="b2602c69:ProjectViewProjectNode" />
               <item name="motintin_items" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="motintin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="motintin_items" type="b2602c69:ProjectViewProjectNode" />
-              <item name="motintin_items" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="motintin" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="universal" type="462c0819:PsiDirectoryNode" />
+              <item name="stage" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,6 +281,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/target" />
+      <recent name="$PROJECT_DIR$/target/universal" />
+      <recent name="$PROJECT_DIR$/target/universal/stage" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -257,6 +294,8 @@
       <recent name="com.ogunleye.motintin.db" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/universal/stage/bin" />
+      <recent name="$PROJECT_DIR$/target/universal/stage" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -376,10 +415,10 @@
       <map>
         <entry key="$PROJECT_DIR$/../calculator" value="1465310946000" />
         <entry key="$PROJECT_DIR$/../hmrc-test" value="1486191113000" />
-        <entry key="$PROJECT_DIR$" value="4554439478000" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="796286817" />
+        <entry key="$PROJECT_DIR$" value="4564197665000" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1168946456" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="2920355924" />
-        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2193758845" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="566961762" />
         <entry key="$PROJECT_DIR$/../quickcheck" value="1464288170000" />
         <entry key="$PROJECT_DIR$/../shopping-cart-scala" value="1486155238000" />
       </map>
@@ -421,35 +460,35 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
       <window_info anchor="bottom" id="SBT Console" order="11" weight="0.32980132" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32802126" />
       <window_info anchor="right" id="sbt" order="11" weight="0.32967034" />
       <window_info id="Palette&#9;" order="0" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32934928" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20717132" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.39028475" visible="true" weight="0.17069598" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.3886097" visible="true" weight="0.17289378" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="12" />
-      <window_info anchor="bottom" id="Build" order="12" weight="0.32980132" />
-      <window_info id="Structure" order="7" sideWeight="0.6097152" side_tool="true" visible="true" weight="0.17069598" />
+      <window_info id="Structure" order="7" sideWeight="0.6113903" side_tool="true" visible="true" weight="0.17289378" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39707837" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32802126" />
       <window_info anchor="right" id="Gradle" order="8" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="SBT" order="6" weight="0.32820514" />
       <window_info id="Nl-Palette" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.32980132" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Properties" order="9" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3258278" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
@@ -463,35 +502,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.mongodb/casbah-commons_2.11/srcs/casbah-commons_2.11-3.1.1-sources.jar!/Implicits.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.mongodb/mongo-java-driver/srcs/mongo-java-driver-3.2.2-sources.jar!/org/bson/types/ObjectId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="422" column="18" selection-start-line="422" selection-start-column="18" selection-end-line="422" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/models/ItemR.scala" />
-    <entry file="jar://$USER_HOME$/.ivy2/cache/de.heikoseeberger/akka-http-circe_2.11/srcs/akka-http-circe_2.11-1.17.0-sources.jar!/de/heikoseeberger/akkahttpcirce/CirceSupport.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-generic_2.11/srcs/circe-generic_2.11-0.8.0-sources.jar!/io/circe/generic/AutoDerivation.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -763,7 +773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/routes/SearchRoute.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="367">
           <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding>
             <element signature="e#38#61#0" expanded="true" />
@@ -780,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/actors/SearchActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="75" column="86" selection-start-line="75" selection-start-column="86" selection-end-line="75" selection-end-column="86" />
+        <state relative-caret-position="1140">
+          <caret line="76" column="86" selection-start-line="76" selection-start-column="86" selection-end-line="76" selection-end-column="86" />
           <folding>
             <element signature="e#38#80#0" expanded="true" />
           </folding>
@@ -802,24 +812,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="165">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/ogunleye/motintin/db/MongoFactory.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="17" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/universal/stage/bin/motintin_items.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/universal/stage/bin/motintin_items">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="190" column="33" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
         </state>
       </provider>
     </entry>

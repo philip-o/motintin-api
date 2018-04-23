@@ -51,3 +51,4 @@ libraryDependencies ++= Seq(
   "com.softwaremill.sttp" %% "circe" % sttpVersion
 )
 
+enablePlugins(JavaAppPackaging)

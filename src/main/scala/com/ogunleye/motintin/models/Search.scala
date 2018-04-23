@@ -16,6 +16,6 @@ case class VendorListingSearchRequest(vendorId: String, ref: ActorRef)
 
 case class VendorListingSearchResponse(vendor: Option[Vendor], ref: ActorRef)
 
-case class SearchListing(vendor: String, productCode: Option[String], webAddress: String, price : Double = 0)
+case class SearchListing(vendor: String, productCode: Option[String], webAddress: String, price: Double = 0)
 
 case class SearchResult(name: String, listings: List[SearchListing])

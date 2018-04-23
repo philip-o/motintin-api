@@ -1,6 +1,6 @@
 package com.ogunleye.motintin.models
 
-case class VendorDetail(name: String, productCode: String, webAddress: String, price : BigDecimal = BigDecimal(0))
+case class VendorDetail(name: String, productCode: String, webAddress: String, price: BigDecimal = BigDecimal(0))
 
 case class ListingDetail(name: String, vendorDetail: List[VendorDetail] = Nil)
 

@@ -2,7 +2,7 @@ package com.ogunleye.motintin.actors
 
 import java.util.UUID
 
-import akka.actor.{Actor, ActorRef, Props}
+import akka.actor.{ Actor, ActorRef, Props }
 import com.ogunleye.motintin.db.ListingConnection
 import com.ogunleye.motintin.models._
 import com.typesafe.scalalogging.LazyLogging
@@ -10,7 +10,7 @@ import com.typesafe.scalalogging.LazyLogging
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.collection.mutable
 import scala.concurrent.Future
-import scala.util.{Failure, Success}
+import scala.util.{ Failure, Success }
 
 class ListingActor extends Actor with LazyLogging {
 
@@ -27,25 +27,30 @@ class ListingActor extends Actor with LazyLogging {
   override def receive: Receive = {
     case response: ItemListingResponse =>
       response.item match {
-        case None => requestMap(response.request) ! NotFoundException(s"No item found for request: ${response.request}")
+        case None =>
+          requestMap(response.request) ! NotFoundException(s"No item found for request: ${response.request}")
           requestMap -= response.request
-        case Some(item) => val request = response.request
+        case Some(item) =>
+          val request = response.request
           listingMap(request) = Listing(_id = None, itemId = item._id.get, vendorId = "", productCode = request.productCode, request.webAddress, request.price)
           vendorActor ! VendorNameRequest(request.vendorName, request)
       }
     case response: VendorNameResponse =>
       response.vendor match {
-        case None => requestMap(response.request) ! NotFoundException(s"No vendor found for request: ${response.request}")
+        case None =>
+          requestMap(response.request) ! NotFoundException(s"No vendor found for request: ${response.request}")
           requestMap -= response.request
           listingMap -= response.request
-        case Some(vendor) => val listing = listingMap(response.request).copy(vendorId = vendor._id.get)
+        case Some(vendor) =>
+          val listing = listingMap(response.request).copy(vendorId = vendor._id.get)
           listingMap -= response.request
           val ref = requestMap(response.request)
           requestMap -= response.request
           Future {
             listingConnection.save(listing)
           } onComplete {
-            case Success(result) => val saved = listingConnection.findByItemId(listing.itemId).filter(i => i.vendorId == response.vendor.get._id.get).head
+            case Success(result) =>
+              val saved = listingConnection.findByItemId(listing.itemId).filter(i => i.vendorId == response.vendor.get._id.get).head
               ref ! saved
             case Failure(t) => ref ! new Exception("Failed to save", t)
           }
@@ -56,22 +61,25 @@ class ListingActor extends Actor with LazyLogging {
         case None => logger.error(s"No vendor entry found for vendor id: ${response.id} on request: ${response.request}")
         case Some(_) =>
       }
-    case ("itemId", id: String) => val ref = sender()
+    case ("itemId", id: String) =>
+      val ref = sender()
       Future {
         findByItemId(id)
       } onComplete {
         case Success(list) => ref ! list
         case Failure(_) => ref ! new Exception(s"Listing with itemId $id does not exist")
-    }
-    case ListingsByItemIdRequest(itemId: String, parent: ActorRef) => val ref = sender()
+      }
+    case ListingsByItemIdRequest(itemId: String, parent: ActorRef) =>
+      val ref = sender()
       Future {
-      findByItemId(itemId)
-    } onComplete {
-      case Success(list) => ref ! ListingsByItemIdResponse(list, parent)
-      case Failure(_) => ref ! ListingsByItemIdResponse(Nil, parent)
-    }
+        findByItemId(itemId)
+      } onComplete {
+        case Success(list) => ref ! ListingsByItemIdResponse(list, parent)
+        case Failure(_) => ref ! ListingsByItemIdResponse(Nil, parent)
+      }
     case ("id", id: String) => findById(id, sender())
-    case request: ListingRequest => requestMap(request) = sender()
+    case request: ListingRequest =>
+      requestMap(request) = sender()
       itemActor ! request
   }
 
@@ -79,7 +87,7 @@ class ListingActor extends Actor with LazyLogging {
     listingConnection.findByItemId(id)
   }
 
-  private def findById(id: String, ref: ActorRef) : Unit = {
+  private def findById(id: String, ref: ActorRef): Unit = {
     Future {
       listingConnection.findById(id)
     } onComplete {
